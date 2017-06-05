@@ -20,7 +20,7 @@
     
     <script type="text/javascript">
 
-    var game = new Phaser.Game(450, 540, Phaser.AUTO);
+    var game = new Phaser.Game(450, 550, Phaser.AUTO);
 
     var Pacman = function (game) {
 
@@ -92,7 +92,7 @@
             this.dots = this.add.physicsGroup();
             this.diamond = this.add.physicsGroup();
             
-            this.map.createFromTiles(36, this.safetile, 'diamond', this.layer, this.diamond);
+            this.map.createFromTiles(35, this.safetile, 'diamond', this.layer, this.diamond);
             
             this.map.createFromTiles(7, this.safetile, 'dot', this.layer, this.dots);
 
@@ -118,9 +118,9 @@
             this.pacman.play('munch');
             this.move(Phaser.RIGHT);
 
-            this.TextScr = game.add.text(290, -5, 'Score: 0', {fondSize: '9px Arial', fill: '#f7ea31'})
+            this.TextScr = game.add.text(0, -5, 'Score: 0', {fondSize: '9px Arial', fill: '#f7ea31'})
             
-            this.TextBns = game.add.text(290, -5, 'Score: 0', {fondSize: '9px Arial', fill: '#f7ea31'})
+            this.TextBns = game.add.text(300, -5, 'Score: 0', {fondSize: '9px Arial', fill: '#f7ea31'})
             
             	    life = game.add.group();	
 		
