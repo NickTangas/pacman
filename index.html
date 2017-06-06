@@ -564,17 +564,7 @@
         		}        		
         	}
 
-        	if(this.physics.arcade.collide(this.pacman, this.teleport1))
-        	{
-        		this.pacman.position.x = (20 * 16) + 8;
-                this.pacman.position.y = (14 * 16) + 8;
-        	}
-        	if(this.physics.arcade.collide(this.pacman, this.teleport2))
-        	{
-        		this.pacman.position.x = (7 * 16) + 8;
-                this.pacman.position.y = (14 * 16) + 8;
-        	}
-
+        
          
             this.physics.arcade.collide(this.pacman, this.layer);
             this.physics.arcade.overlap(this.pacman, this.dots, this.eatDot, null, this);
